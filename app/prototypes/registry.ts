@@ -7,6 +7,7 @@ import { ComponentType } from 'react'
 export const prototypes: Record<string, () => Promise<{ default: ComponentType }>> = {
   'bouncing-ball': () => import('../../prototypes/bouncing-ball/index'),
   'counter': () => import('../../prototypes/counter/index'),
+  'ai-career-coach': () => import('../../prototypes/ai-career-coach/index'),
 }
 
 export function getPrototypeComponent(slug: string) {
